@@ -1,0 +1,174 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\setlength{\footskip}{4.08003pt}
+\hypersetup{
+  pdftitle={Resume - Kiril Kvas},    
+  pdfauthor={Kiril Kvas},            
+  pdfsubject={Curriculum Vitae},     
+  pdfcreator={LaTeX with hyperref}, 
+  pdfproducer={pdfTeX},           
+  pdfkeywords={ Node, Nest Typescript, AWS, Docker, Git}, 
+  colorlinks=false,       
+  linkcolor=magenta,                
+  filecolor=magenta,          
+  urlcolor=magenta                 
+}
+
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{magenta}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{5pt}  % Adjust the space here
+}
+%-------------------------------------------
+
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Kiril Kvas} \\ \vspace{1pt}
+    \small +380981713584 $|$ \href{mailto:kirilkvas07@gmail.com}{\underline{kirilkvas07@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/kiril-kvas-999154239/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/rillsvai}{\underline{GitHub}}
+\end{center}
+
+
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Node.js backend developer}{Feb 2023 -- Apr 2024}
+      {Insiders}{}
+      \resumeItemListStart
+            \resumeItem{Moved backend system from AWS EC2 to AWS Elastic Beanstalk with Docker containerization using Elastic Container Registry to make the ecosystem more automated.}
+            \resumeItem{Built CI/CD pipelines using GitHub Actions and AWS Amplify to automate the deployment of the frontend components on AWS }
+            \resumeItem{Expanded and optimized the functionality of the Express API by monitoring workload with AWS CloudWatch, significantly reducing server load}
+            \resumeItem{I developed a backend for a booking widget that included payment processing using Stripe and integration with Google Calendar. In result customer was able to replace the third-party service with this implementation}
+            \resumeItem{ Contributed to the development of the payroll system using NestJS with GraphQL and Apollo Server. }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Node.js backend developer}{Jun 2024 -- Present}
+      {mindSoft}{}
+      \resumeItemListStart
+        \resumeItem{Soon}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Javascript/Typescript, GraphQL, Rust, CSharp, SQL} \\
+     \textbf{Frameworks}{: NestJS, Express, Fastify, Actix-Web, Axum, ASP.NET} \\
+     \textbf{Technologies}{: Node.js, Git, Docker, GitHub Actions, AWS, Azure, Linux, PostgreSQL, MySQL, Redis, MongoDB, Apollo Server} \\
+    }}
+ \end{itemize}
+ 
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ivan Franko National University of Lviv}{}
+      {Bachelor of Applied Mathematics} {Sep 2021 -- Jun 2025}
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Email newsletter} $|$ \emph{Rust, Actix-Web, Azure, PostgreSQL, Docker, GitHub Actions}}{}
+          \resumeItemListStart
+            \resumeItem{Built a CI pipeline using GitHub Actions}
+            \resumeItem{Deployed the application on Azure using Container Instances, Azure SQL Database and Docker Hub.}
+            \resumeItem{Developed REST API with Postmark integration covered with both unit and integration tests}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Raw websocket server} $|$ \emph{Javascript, Networking, Websocket}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented handshake logic between client and server for the upgrade request}
+            \resumeItem{Developed support for receiving and sending WebSocket frames}
+            \resumeItem{Gained familiarity with the structure of WebSocket frames, varying according to payload length}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+\section{Languages}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {English}{}
+      {B2} {}
+    \resumeSubheading
+      {Ukranian}{}
+      {Native} {}
+  \resumeSubHeadingListEnd
+  
+\end{document}
+
+ 
