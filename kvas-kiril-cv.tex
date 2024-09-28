@@ -10,6 +10,8 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
+\usepackage{charter}
+\usepackage{ragged2e}
 
 \setlength{\footskip}{4.08003pt}
 \hypersetup{
@@ -18,15 +20,12 @@
   pdfsubject={Curriculum Vitae},     
   pdfcreator={LaTeX with hyperref}, 
   pdfproducer={pdfTeX},           
-  pdfkeywords={ Node, Nest Typescript, AWS, Docker, Git}, 
+  pdfkeywords={Node, Nest Typescript, AWS, Docker, Git}, 
   colorlinks=false,       
   linkcolor=magenta,                
   filecolor=magenta,          
   urlcolor=magenta                 
 }
-
-\usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} 
@@ -91,7 +90,6 @@
 
 \begin{document}
 
-
 \begin{center}
     \textbf{\Huge \scshape Kiril Kvas} \\ \vspace{1pt}
     \small +380981713584 $|$ \href{mailto:kirilkvas07@gmail.com}{\underline{kirilkvas07@gmail.com}} $|$ 
@@ -102,32 +100,33 @@
 \section{Experience}
 \resumeSubHeadingListStart
     \resumeSubheading
-      {Node.js backend developer}{Jun 2024 -- Present}
+      {Node.js Backend Developer}{Jun 2024 -- Present}
       {mindSoft}{}
       \resumeItemListStart
-        \resumeItem{Designed and configured CI/CD pipelines for microservices using Jenkins}
-        \resumeItem{Deployed microservices on EC2 using containerization}
-        \resumeItem{Implemented and maintained monitoring and metric tools such as Grafana and Prometheus for immediate response in case of down-time and deep analysis of our system}
-        \resumeItem{Managed and actively developed Nest.js/Express-based microservices that communicated via AMQP (RabbitMQ specifically)}
+        \resumeItem{Designed and configured CI/CD pipelines for microservices using Jenkins, streamlining the deployment process.}
+        \resumeItem{Deployed microservices on AWS EC2 instances using containerization, improving scalability and resource utilization.}
+        \resumeItem{Implemented and maintained monitoring and metrics tools such as Grafana and Prometheus, enabling immediate response to downtime and facilitating in-depth system analysis.}
+        \resumeItem{Managed and actively developed Nest.js/Express-based microservices communicating via AMQP (RabbitMQ), enhancing inter-service communication and system modularity.}
       \resumeItemListEnd
-  \resumeSubHeadingListEnd
-  \resumeSubHeadingListStart
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
     \resumeSubheading
-      {Node.js backend developer}{Feb 2023 -- Apr 2024}
+      {Node.js Backend Developer}{Feb 2023 -- Apr 2024}
       {Insiders}{}
       \resumeItemListStart
-            \resumeItem{Moved backend system from AWS EC2 to AWS Elastic Beanstalk with Docker containerization using Elastic Container Registry to make the ecosystem more automated.}
-            \resumeItem{Built CI/CD pipelines using GitHub Actions and AWS Amplify to automate the deployment of the frontend components on AWS }
-            \resumeItem{Expanded and optimized the functionality of the Express API by monitoring workload with AWS CloudWatch, significantly reducing server load}
-            \resumeItem{I developed a backend for a booking widget that included payment processing using Stripe and integration with Google Calendar. In result customer was able to replace the third-party service with this implementation}
-            \resumeItem{ Contributed to the development of the payroll system using NestJS with GraphQL and Apollo Server. }
+            \resumeItem{Migrated backend system from AWS EC2 to AWS Elastic Beanstalk with Docker containerization using Elastic Container Registry, resulting in a more automated and scalable ecosystem.}
+            \resumeItem{Built CI/CD pipelines using GitHub Actions and AWS Amplify to automate the deployment of frontend components on AWS, improving deployment efficiency.}
+            \resumeItem{Expanded and optimized Express API functionality by monitoring workload with AWS CloudWatch, significantly reducing server load.}
+            \resumeItem{Developed a backend for a booking widget including payment processing using Stripe and integration with Google Calendar, enabling the customer to replace third-party services.}
+            \resumeItem{Contributed to the development of a payroll system using NestJS with GraphQL and Apollo Server, enhancing system capabilities and performance.}
       \resumeItemListEnd
-  \resumeSubHeadingListEnd
-  
+\resumeSubHeadingListEnd
+
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Javascript/Typescript, GraphQL, Rust, CSharp, SQL} \\
+     \textbf{Languages}{: JavaScript/TypeScript, GraphQL, Rust, C\#, SQL} \\
      \textbf{Frameworks}{: NestJS, Express, Fastify, Actix-Web, Axum, ASP.NET} \\
      \textbf{Technologies}{: Node.js, Git, RabbitMQ, GCP, Docker, GitHub Actions, AWS, Azure, Linux, PostgreSQL, MySQL, Redis, MongoDB, Apollo Server} \\
     }}
@@ -143,18 +142,11 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Graduate work} $|$ \emph{Efficiency of classical cryptography algorithms based on elliptic curves}}{}
+          {\textbf{Undergraduate Thesis} $|$ \emph{Efficiency of Classical Cryptography Algorithms Based on Elliptic Curves}}{}
           \resumeItemListStart
-            \resumeItem{Gained tons of knowledge about cryptography, cryptoanalysis}
-            \resumeItem{Dived deeply into elliptic curves cryptography}
-            \resumeItem{Implemented ElGamal algorithm with Elliptic Curve ElGamal and conducted an in-depth analysis}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Raw websocket server} $|$ \emph{Javascript, Networking, Websocket}}{}
-          \resumeItemListStart
-            \resumeItem{Implemented handshake logic between client and server for the upgrade request}
-            \resumeItem{Developed support for receiving and sending WebSocket frames}
-            \resumeItem{Gained familiarity with the structure of WebSocket frames, varying according to payload length}
+            \resumeItem{Conducted an in-depth study on the efficiency of classical cryptography algorithms based on elliptic curves.}
+            \resumeItem{Implemented ElGamal algorithm and its elliptic curve variant, performing comprehensive analysis on their performance and security.}
+            \resumeItem{Enhanced understanding of cryptography and cryptanalysis, particularly in the context of elliptic curve cryptography.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
     
@@ -162,12 +154,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {English}{}
-      {B2} {}
+      {Upper Intermediate (B2)} {}
     \resumeSubheading
-      {Ukranian}{}
+      {Ukrainian}{}
       {Native} {}
   \resumeSubHeadingListEnd
   
 \end{document}
-
- 
